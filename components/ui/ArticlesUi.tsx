@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { AspectRatio } from "./aspect-ratio";
+
 
 interface data {
   id: number;
@@ -28,7 +28,7 @@ export default function Articlesui({
       <div className="">
 
 
-        <Image src={src} alt={cat} layout="responsive" objectFit="cover" height="0" width="0" className="w-full h-full top-0 left-0 object-cover rounded-2xl" />
+        <Image src={src} alt={cat} layout="responsive" height="0" width="0" className="w-full h-full top-0 left-0 object-cover rounded-2xl" />
 
       </div>
       <p className="text-gray-500 dark:text-gray-400">{desc}</p>
