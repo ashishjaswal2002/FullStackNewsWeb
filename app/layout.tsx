@@ -19,6 +19,7 @@ export default function RootLayout({
 
 
       <body className={inter.className}>
+
         <TopNotch />
 
         {children}</body>

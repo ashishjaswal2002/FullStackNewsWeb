@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { LoginButton } from "@/components/auth/login-button";
 
 export default function Page() {
   return (
@@ -39,9 +40,11 @@ export default function Page() {
             </div>
             <Input id="password" required type="password" />
           </div>
-          <Button className="w-full" type="submit">
-            Login
-          </Button>
+          <LoginButton >
+            <Button type="submit" className="w-full mt-[.7rem] mx-auto flex justify-center">
+              Login
+            </Button>
+          </LoginButton>
           <Button className="w-full" variant="outline">
             Login with Google
           </Button>
