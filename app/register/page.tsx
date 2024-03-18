@@ -49,7 +49,7 @@ export default function Page() {
         </CardContent>
         <CardFooter className="mt-4 text-center text-sm">
           <p>Already have an account?</p>
-          <Link className="underline" href="/login">
+          <Link className="underline" href="/">
             Login here
           </Link>
         </CardFooter>

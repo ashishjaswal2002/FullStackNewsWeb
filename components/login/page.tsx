@@ -1,3 +1,6 @@
+'use client';
+import * as z from 'zod';
+import { LoginSchema } from '@/schemas';
 import {
   CardTitle,
   CardDescription,
@@ -9,12 +12,22 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
+import { useForm } from "react-hook-form";
+import { FormItem, FormLabel, FormMessage, FormField, FormControl, Form } from "../ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function Login() {
+  const form = useForm<z.infer<typeof LoginSchema>>({
+    resolver: zodResolver(LoginSchema),
+    defaultValues: {
+      email: "",
+      password: ""
+    }
+  });
   return (
     <Card className="mx-auto max-w-sm">
       <CardHeader className="space-y-1">
+
         <CardTitle className="text-2xl font-bold">Login</CardTitle>
         <CardDescription>
           Enter your email below to login to your account
