@@ -23,19 +23,19 @@ export const Navbar =  async() =>{
           <nav className="mt-6 grid gap-4">
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="#"
+              href="/newsarticles/india"
             >
              India
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="#"
+              href="/newsarticles/business"
             >
               Business
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="#"
+              href="/newsarticles/politics"
             >
              Politics
             </Link>
@@ -47,13 +47,13 @@ export const Navbar =  async() =>{
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="#"
+              href="/newsarticles/science"
             >
            Science
             </Link>
             <Link
               className="flex items-center gap-2 rounded-md px-3 py-2 text-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800"
-              href="#"
+              href="/newsarticles/startups"
             >
              Startups
             </Link>

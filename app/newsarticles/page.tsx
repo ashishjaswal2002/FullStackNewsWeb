@@ -82,8 +82,8 @@ const arr: data[] = [
   },
 
 ];
-export default async function NewsArticles() {
-  const session = await auth();
+export default  function NewsArticles() {
+
   return (
     <>
       <main className=" ">

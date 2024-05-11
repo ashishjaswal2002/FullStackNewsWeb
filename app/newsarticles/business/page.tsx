@@ -74,7 +74,7 @@ interface data {
       image:
 "https://media.geeksforgeeks.org/wp-content/uploads/20230619180656/Traffic-Signal-Lights.webp",
       timeStamp: "10 hours",
-    },
+    }
   
   ];
 
@@ -82,7 +82,7 @@ interface data {
 
 
 
-  export default  function India() {
+  export default  function Business() {
 
     return (
       <>
